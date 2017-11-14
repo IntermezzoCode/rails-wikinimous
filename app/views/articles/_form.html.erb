@@ -1,0 +1,10 @@
+<h1>New/Edit Article</h1>
+
+<%= form_for(@article) do |f| %>
+<h2> <%= f.label :title %> </h2>
+<%= f.text_field :title %>
+<h2> <%= f.label :content %></h2>
+<%= f.text_area :content %>
+<br>
+<%= f.submit %>
+<% end %>
